@@ -21,5 +21,12 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('accountants.urls')),
-
+    path('core/', include('core.urls')),
+    path('donars/', include('donars.urls')),
+    path('donations/', include('donations.urls')),
+    path('inventory/', include('inventory.urls')),
+    path('lab/', include('lab.urls')),
+    path('notifications_app/', include('notifications_app.urls')),
+    path('reports/', include('reports.urls')),
+    path('requests_app/', include('requests_app.urls')),    
 ]
